@@ -1,5 +1,3 @@
-
-# Githubworthy?
 function sortComparable!(array, compareTo)
 
     function insertionSort_comparable!(array, compareTo)
