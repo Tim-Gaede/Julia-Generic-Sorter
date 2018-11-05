@@ -1,0 +1,1 @@
+The function sorts an array of structs as if they were generic.  You must create a compareTo() function and pass it as an argument to the sorting function.
