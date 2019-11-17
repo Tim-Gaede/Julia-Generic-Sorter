@@ -18,7 +18,7 @@ function sortComparable!(a, compareTo)
 
         i = lo;  j = hi
         while i < hi
-            pivot = a[(lo+hi)>>>1]
+            pivot = a[(lo+hi) ÷ 2]
             while i <= j
                 while compareTo(a[i], pivot) < 0;    i += 1;    end
                 while compareTo(a[j], pivot) > 0;    j -= 1;    end
@@ -34,7 +34,7 @@ function sortComparable!(a, compareTo)
     end
 
 
-    if length(a) < 16 # <-Not optimized?
+    if length(a) ≤ 60
         insSort_comp!(a, compareTo)
     else
         qSort_comp!(a, 1, length(a), compareTo)
