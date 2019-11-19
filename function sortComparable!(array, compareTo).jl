@@ -1,7 +1,7 @@
-function sortComparable!(a, compareTo)
+function sortComparable!(a::Array, compareTo)
 
     #inertionSort for comparable
-    function insSort_comp!(a, compareTo)
+    function insSort_comp!(a::Array, compareTo)
 
         for i = 2 : length(a)
             j = i
@@ -14,7 +14,7 @@ function sortComparable!(a, compareTo)
     end
 
     #quickSort for comparable
-    function qSort_comp!(a, lo, hi, compareTo)
+    function qSort_comp!(a::Array, lo::Int64, hi::Int64, compareTo)
 
         i = lo;  j = hi
         while i < hi
